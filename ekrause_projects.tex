@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage{resume}
+\usepackage{array}
+
+\begin{document}
+\small
+\vspace*{-.5in}
+
+% Contact Info at top
+\input{contact.tex}
+
+\begin{center} 
+	{\Large \scshape {Major Projects}}\\
+	\textit{\small{Last Updated \today}}
+	\end{center}
+	
+\header{Summer 2013}
+	\begin{description}
+		\item[Study of Instruction Window Size vs. Pipeline Width in Superscalar Processors] -- Written Report \\
+		
+		\emph{Abstract:} In this paper, we explore the characteristics of instruction window size and pipeline width and evaluate the relationship between these two important parameters. We propose an optimal configuration to increase performance while keeping hardware cost, complexity, and power consumption to a minimum.  We use the SimpleScalar 3.0 SuperScalar Simulator to execute simulations and outline the characteristics of each benchmark in the SPEC95 Integer suite. After presenting relevant related work and describing our testing methodologies, we analyze the results of our simulations and recommend an optimal implementation that remains feasible in hardware, yet provides maximum performance. 
+
+		
+		\begin{tabular}{p{1in}l}
+		\textit{Report} & \url{http://db.tt/gt544KJL}\\
+		\end{tabular}
+	\end{description}
+	
+		
+\header{Winter 2013}
+
+	\begin{description}
+		\item[Branch Target Predictor / Branch Target Buffer] This project won 3$^{rd}$ place in a class competition for best performance.  \\\textit{Abstract:} A branch predictor (modeled after the Alpha 21264 predictor) and a branch target buffer of our own design were created and simulated. These were used to predict the outcome and target of branches using 20 instruction traces from an “unknown” ISA, and achieved a rate of 13.059 target mispredicts per 1,000 instructions and a rate of 6.203 outcome mispredicts per 1,000 instructions.
+
+		\begin{tabular}{p{1in}l}
+		\textit{Documentation} & \url{http://dl.dropbox.com/u/11268934/BP_BTB_writeup.pdf}\\
+		\textit{Repository} & \url{https://github.com/rattboi/flanders_ece486}\\
+		\end{tabular}
+
+	\end{description}
+	
+\header{Fall 2012}
+\begin{description}
+\item[FPGA-based Color Tracking Robot] Can be programmed to seek out and maintain a distance from a user-specified color. Major components include Spartan-6E development board and CMUCam4 camera board. Controlled by Picoblaze soft-core microcontroller.
+
+		\begin{tabular}{p{1in}l}
+		\textit{Documentation} & \url{https://dl.dropbox.com/u/11268934/fpgabot_writeup.pdf}\\
+		\textit{Presentation/Video} & \url{http://goo.gl/cZOe4}\\
+		\end{tabular}
+		
+
+\item[L1 Cache Simulation] Design and simulation of split (data/instruction) L1 cache for use in multiprocessor system.  Both caches are set-associative and employs MESI protocol to ensure cache coherence.
+
+		\begin{tabular}{p{1in}l}
+		\textit{Documentation} & \url{https://dl.dropbox.com/u/11268934/ekrause_cachesim.pdf}\\
+		\textit{Repository} & \url{https://github.com/ekrause/0xBEEFA55}\\
+		\end{tabular}	
+	\end{description}	
+\header{Speing 2012}
+\begin{description}	
+
+\item[LabJack Driver for Linux]  Designed and wrote driver in C to expose basic functionality of a LabJack U3 device for Ubuntu 10.10 system.  Allowed reading of voltages of select pin, setting output toggling frequency of another pin, and reading of internal thermometer.  Used low-level USB-code as communication layer for passing messages to/from module.  Allowed hot-plugging of multiple devices.  
+		
+\end{description}
+\header{Winter 2012}
+\begin{description}
+\item[ARM RS-232C driver for RC Systems 8660 Voice Synthesizer] Wrote, tested, and debugged a program written in GNU ARM assembly language that initialized a RC Systems 8660 Talker Board connected to an Intel PXA270-based Zeus Board using the RS-232C interface.  The program responded to hardware interrupts generated with a pushbutton connected to a GPIO pin by sending properly formatted ASCII strings through the RS-232C interface at one of the COM ports of the Zeus Board, which were then spoken by the talker board.   Used the GNU ARM toolchain for Cygwin, and tested the program directly on an Intel PXA270-based Zeus Board
+
+	\item[Interrupt-Driven ARM program for PXA270-based Zeus Board] Wrote, tested, and debugged a program written in GNU ARM assembly language, which responded to hardware interrupts caused by a button connected directly to a GPIO pin on the board.  The program also responded to interrupts caused by a real-time clock on the board, and these two interrupt sources controlled the lighting of an LED also connected to a GPIO pin.   Used the GNU ARM toolchain for Cygwin, and tested the program directly on an Intel PXA270-based Zeus Board
+	\end{description}
+\end{document}
