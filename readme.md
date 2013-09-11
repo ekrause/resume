@@ -1,3 +1,4 @@
-Resume
+resume
+======
 
 Personal Resume
