@@ -1,106 +1,103 @@
 \documentclass{article}
 \usepackage{resume}
-\usepackage{fancyhdr}
-\renewcommand{\headrulewidth}{0pt}
-\pagestyle{fancy}
-\fancypagestyle{firststyle}
-{
-   \fancyhf{}
-   \fancyfoot[C]{
-   \emph{-- continued on next page --}}
-}
 
 \begin{document}
-\thispagestyle{firststyle}
-
+\thispagestyle{firststyle} % bottom of first page will have a "continued..." footer
 \small
 
-\vspace*{-.5in}
+\vspace*{-.5in} % Move up a bit to use more of the page
 
-% Contact Info at top
-
+% Contact info header
 \begin{center}
 	{\LARGE \scshape {Eric Krause}}	\\
 	8815 SW 36th Ave $\bullet$ Portland OR, 97219  $\bullet$ (541) 337-5788\\
-	\url{ekrause@pdx.edu}  $\bullet$  \url{www.sauerblog.wordpress.com/home}\\
+	\url{ekrause@pdx.edu}  $\bullet$  \url{www.sauerblog.wordpress.com}\\
 \end{center}
 
+% Objective statement
 \header{Objective}
-Seeking full-time engineering position in the fields of Computer Architecture and/or Embedded Systems
+	\hspace{-10pt} Seeking full-time engineering position in the fields of Computer Architecture and/or Embedded Systems
 
-% All schools and education
+% Education section
 \header{Education}
+	\hspace{-10pt}\schoolentry{M.S., Computer Engineering}{3.86}{Portland State University}{2011-2013}
+  \vspace{3pt}
 
-	\textbf{M.S., Computer Engineering \hfill GPA: 3.86/4.00}\\
-	\emph{Portland State University \hfill 2011-2013}\\
-	\vspace{6pt}
+	\schoolentry{Post-Bac, Electrical/Computer Engineering}{3.88}{Portland State University}{2010-2012}
+	\vspace{3pt}
+
+	\schoolentry{B.A., Environmental Studies}{3.80}{University of Oregon}{2005-2009}
 	
-	\textbf{Post-Bac, Electrical/Computer Engineering \hfill GPA: 3.88/4.00}\\
-	\emph{Portland State University \hfill 2010-2012}\\						
-	\vspace{6pt}
-	
-	\textbf{B.A., Environmental Studies \hfill GPA: 3.80/4.00}\\
-	\emph{Portland State University \hfill 2005-2009}\\
-	\vspace{6pt}
-	
-% skills section
+% Skills section
 \header{Technical Skills} 
-\begin{description}
-\item[Proficient Languages:] Verilog, C, Assembly (ARM, z80, MIPS, PicoBlaze)
-\item[Familiar Languages:] C++, SystemVerilog, Python, Bash Script, \LaTeX, AHK, Java (for Android Development)
-\item[Hardware:] RTL design and debug, digital design and SoC/embedded system design and debug with FPGAs.  Comfortable using test equipment in a laboratory setting to verify and debug digital designs.
-\item[Software:] Relatively OS agnostic; equal experience with Mac/Windows/Linux.  Professional experience with Xilinx Toolchain (ISE, Lab Tools, EDK, SDK).  Limited experience with GNU Toolchain (Make, GCC) and VCS (git).
-\end{description}
-\vspace{-3pt}
+	\vspace{-15pt}
+	\begin{description}
+		\item[Proficient Languages:] Verilog, C, Assembly (ARM, z80, MIPS, PicoBlaze)
+		\item[Familiar Languages:] C++, SystemVerilog, Python, Bash Script, \LaTeX, AHK, Java (for Android Development)
+		\item[Hardware:] RTL design and debug, digital design and SoC/embedded system design and debug with FPGAs.  Comfortable using test equipment in a laboratory setting to verify and debug digital designs.
+		\item[Software:] Relatively OS agnostic; equal experience with Mac/Windows/Linux.  Professional experience with Xilinx Toolchain (ISE, Lab Tools, EDK, SDK).  Limited experience with GNU tools (Make, GCC) and VCS (git).
+	\end{description}
+	\vspace{-4pt}
+
 % Projects
-
 \header{Academic Projects}
+	\vspace{-15pt}
+	
+	\begin{itemize}
+		\item \NameUrlTextBlock
+		{FPGA-Based Color-Tracking Robot (Verilog, PicoBlaze)}{http://tinyurl.com/color-fpga-bot}
+		{I worked with a partner to design and built an autonomous color-seeking robot for the final project in an SoC with FPGAs course.  The robot was controlled using a Picoblaze soft-core microcontroller instantiated in the FPGA on a Spartan-6E development board, and used a CMUCam4 for vision, as well as other sensors for environmental awareness.  It could be trained to any color, which it would then seek out and follow. 
+In a classwide competition, this design was awarded 1$^{st}$ place for best term project by the instructors.}
+ 
+		\item \NameUrlTextBlock
+		{Branch Predictor/BTB simulation (C)}	{https://github.com/rattboi/flanders_ece486}
+		{I worked with a partner to develop a branch predictor and branch target buffer simulation as a final project in a Computer Architecture course.   Our algorithm was tested against numerous traces from an unknown processor and obtained the 3$^{rd}$ best performance in the class.}
+		
+		\item \NameUrlTextBlock
+		{Microprocessor Cache Simulation (Verilog)}{https://github.com/ekrause/0xBEEFA55}
+		{I developed a split-level L1 cache simulator with a small team for the final of a Microprocessor Design course. It read in textﬁle sample trace data, and displayed cache hit/miss statistics.  We were later contacted by the professor and our source code was incorporated into the course material.}
+	\end{itemize}
+	\vspace{-4pt}
 
-\textbf{FPGA-Based Color-Tracking Robot (Verilog, PicoBlaze) \hfill \url{http://tinyurl.com/color-fpga-bot}}\\
-I worked with a partner to design and built an autonomous color-seeking robot for the final project in an SoC with FPGAs course.  The robot was controlled using a Picoblaze soft-core microcontroller instantiated in the FPGA on a Spartan-6E development board, and used a CMUCam4 for vision, as well as other sensors for environmental awareness.  It could be trained to any color, which it would then seek out and follow.\\\vspace{3pt}
-In classwide competition, this design was awarded 1$^{st}$ place for best  term project by the instructors. 
-
-\vspace{3pt}
-
-\textbf{Branch Predictor/BTB simulation (C) \hfill \url{https://github.com/rattboi/flanders_ece486}}\\
-I worked with a partner to develop a branch predictor and branch target buffer simulation as a final project in a Computer Architecture course.   Our algorithm was tested against numerous traces from an unknown processor and obtained the 3$^{rd}$ best performance in the class.\\
-
-\vspace{3pt}
-
-\textbf{Microprocessor Cache Simulation (Verilog) \hfill \url{https://github.com/ekrause/0xBEEFA55}}\\
-I developed a split-level L1 cache simulator with a small team for the final of a Microprocessor Design course. It read in textﬁle sample trace data, and displayed cache hit/miss statistics.  We were later contacted by the processor and our source code was incorporated into the course material.  
-
+% Awards, etc	
 \header{Honors, Awards, and Volunteering}
-\vspace{-6pt}
-\begin{itemize}
-\item \textbf{Etta Kappa Nu (HKN) \hfill \url{http://web.cecs.pdx.edu/~eta/}}\\
-IEEE Honors Society. Limited to top 25\% of Department.
+	\vspace{-15pt}
+	\begin{itemize}
+		
+		\item \NameUrlTextBlock{Etta Kappa Nu (HKN)}{http://web.cecs.pdx.edu/~eta/}
+		{IEEE Honors Society. Limited to top 25\% of Department.}
 
+		\item \NameUrlTextBlock{Golden Key International Honour Society}{https://www.goldenkey.org/}
+		{Member since 2008.}
+		\item \NameUrlTextBlock{Ford Family Foundation Scholarships: Undergraduate/Graduate}{http://www.tfff.org/}
+		{I was one of fewer than 100 Scholars in Oregon to be inducted into the prestigious Ford Family Family Foundation program in 2005.  Awarded graduate scholarship in 2012 following my academic success at University of Oregon (B.A.) and my Portland State University (Post-Bac).} 
+		
+		\item \NameUrlTextBlock{Intel Internal Recognition}{http://db.tt/0nqPo3Yf}
+		{During my first engineering internship, I was recognized for my "excellent creative and technical abilities" demonstrated in my debug and repair of a critical function in a key product in 2013.}
+	\end{itemize}
 
-\item \textbf{Ford Family Foundation Scholarships \hfill \url{http://www.tfff.org/}}\\
-One of fewer than 100 Scholars in Oregon to be inducted into the prestigious Ford Family Family Foundation program in 2005.  Awarded graduate scholarship in 2012 following my academic success of my B.A. at OU and my post-bac at PSU. 
-\item \textbf{Golden Key International Honour Society \hfill \url{https://www.goldenkey.org/}}\\
-Member since 2008.\\
-\item \textbf{Intel Internal Recognition \hfill \url{http://db.tt/0nqPo3Yf}}\\
-I was recognized for my "excellent creative and technical abilities" demonstrated in my debug and repair of a critical function in a key product in 2013.
-\end{itemize}
+\newpage % manual break for predicable formatting
 
-\newpage
-\fancyhf{}
+\fancyhf{} % clear the header/footer of this new page
+
+% continued Awards section
 \header{Honors, Awards, and Volunteering (Continued)}
-\begin{itemize}
+	\vspace{-15pt}
+	\begin{itemize}
+	
+		\item \NameUrlTextBlock{IEEE ECE Tutor}{http://www.pdx.edu/ece/tutoring-resources}
+		{I am an IEEE Tutor for lower-level ECE courses, specializing in digital logic, programming, and digital design.}
 
-\item \textbf{IEEE ECE Tutor \hfill \url{http://www.pdx.edu/ece/tutoring-resources}}\\ 
-I am an IEEE Tutor for lower-level ECE courses, specializing in digital logic, programming, and digital design.
+		\item \NameUrlTextBlock{FreeGeek Volunteer}{http://www.freegeek.org/}
+		{I am a regular volunteer at FreeGeek, a Portland nonprofit dedicated to the mission of recycling technology and providing affordable access to computers.}
 
-\item \textbf{FreeGeek Volunteer \hfill {\url{http://www.freegeek.org/}}}\\
-I am a regular volunteer at FreeGeek, a Portland nonprofit dedicated to the mission of recycling technology and providing affordable access to computers.
+	\end{itemize}
+	\vspace*{-2pt}
 
-\end{itemize}
-\vspace*{-2pt}
+% Work History
 \header{Work History}
-
-	\textbf{Intel Corporation} \textit{Technology Solutions Enabling Intern}  2011-2013\\
+	\hspace{-10pt}
+	\textbf{Intel Corporation}\\2011-2013: \textit{Technology Solutions Enabling Intern}
 	\begin{tight}
 			\item Testing/Verification/Development of FPGA-based Memory Error Injector (MEI)
 		\item Design and development of many CLI utilities for testing, automation, and customer use.
@@ -109,23 +106,23 @@ I am a regular volunteer at FreeGeek, a Portland nonprofit dedicated to the miss
 		\item Design of testbenches for verification of features implemented in future revisions
 	\end{tight} 
 
-	\textbf{Umpqua Bank} \textit{Financial Services Representative} 2010-2011
+	\textbf{Umpqua Bank}\\2010-2011: \textit{Financial Services Representative}
 	\begin{tight}
 		\item Business development, community presentations.
 		\item Loan applications, sales, and financial transactions.
 	\end{tight}
 
-	\textbf{Oregon Community Credit Union} \textit{Sales Associate} 2009-2010
+	\textbf{Oregon Community Credit Union}\\ 2009-2010: \textit{Sales Associate}
 	\begin{tight}
 		\item Loan applications, audits (security, policy, cash verification), and financial transactions.
 	\end{tight}
 
 \header{References}
-\begin{description}
-\item[Isaac Itotia] Technology Solutions Enabling $\cdot$ Intel \hfill isaac.itotia@intel.com $\cdot$ (651) 278-5309
-\item[Mark Faust ] Professor - ECE Department $\cdot$ Portland State University \hfill faustm@pdx.edu $\cdot$ (503) 725-5412
-\item[Roy Kravitz] - Portland St. University Westside ECE Program Director \hfill roy.kravitz@ece.pdx.edu $\cdot$ (503) 913-1678
 
-
-\end{description}
+\vspace*{-9pt}
+\begin{tabular}{llrr}
+	\textbf{Isaac Itotia} & Technology Solutions Enabling (Intel) & \url{isaac.itotia@intel.com} & (651) 278-5309 \\
+	\textbf{Mark Faust} & Professor (Portland State University) & \url{faustm@pdx.edu} & (503) 725-5412\\
+	\textbf{Roy Kravitz} & Professor/Director (Portland State University) & \url{roy.kravitz@ece.pdx.edu} & (503) 913-1678\\ 
+\end{tabular}
 \end{document}
