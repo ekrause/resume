@@ -7,9 +7,6 @@
 
 \vspace*{-.5in} % Move up a bit to use more of the page
 
-% TODO: General : don't use "ECE"
-% TODO: MOAR BULLETS
-% TODO: make everything sound like: "problem, analysis, solution"
 % Contact info header
 \begin{center}
 	{\LARGE \scshape {Eric Krause}}	\\
@@ -17,117 +14,139 @@
 	\url{ekrause@pdx.edu}  $\bullet$  \url{www.sauerblog.wordpress.com}\\
 \end{center}
 
+\vspace{-12pt}
+
 % Objective statement
-\header{Objective}
-	\hspace{-10pt} Seeking full-time engineering position in the fields of Computer Architecture and/or Embedded Systems
+%\header{Objective}
+%	\hspace{-10pt} Seeking full-time engineering position in the fields of %Computer Architecture and/or Embedded Systems
 
-% Education section
-\header{Education}
-	\hspace{-10pt}\schoolentry{M.S., Computer Engineering}{3.86}{Portland State University}{2011-2013}
-  \vspace{3pt}
-
-	\schoolentry{Post-Bac, Electrical/Computer Engineering}{3.88}{Portland State University}{2010-2012}
-	\vspace{3pt}
-
-	\schoolentry{B.A., Environmental Studies}{3.80}{University of Oregon}{2005-2009}
-	
 % Skills section
 \header{Technical Skills} 
 	\vspace{-15pt}
 	\begin{description}
 		\item[Proficient Languages:] Verilog, C, Assembly (ARM, z80, MIPS, PicoBlaze)
 		\item[Familiar Languages:] C++, SystemVerilog, Python, Bash Script, \LaTeX, AHK, Java (for Android Development)
-		\item[Hardware:] RTL design and debug, digital design and SoC/embedded system design and debug with FPGAs.  Comfortable using test equipment in a laboratory setting to verify and debug digital designs.
+		\item[Hardware:] RTL design and debug, digital design and SoC/embedded system design and debug with FPGAs. Experience using test equipment in a laboratory setting to verify and debug digital designs.
 		\item[Software:] Relatively OS agnostic; equal experience with Mac/Windows/Linux.  Professional experience with Xilinx Toolchain (ISE, Lab Tools, EDK, SDK).  Limited experience with GNU tools (Make, GCC) and VCS (git).
 	\end{description}
 	\vspace{-4pt}
 
-% Projects
+% Coursework (Remove as needed)
+\header{Relevant Coursework}
+	\begin{table}[h!]
+		\small
+		\vspace{-18pt}
+	\begin{tabular}{lll}
+	$\bullet$ Microprocessor Design & $\bullet$ Superscalar Processor System Architecture & $\bullet$ Parallel Computing Architecture\\
+	$\bullet$ SoC Design with FPGAs & $\bullet$ Embedded Systems with FPGAs & $\bullet$ Embedded Software Programming\\
+	\end{tabular}
+	\vspace{-18pt}
+\end{table}	
+
+% Education section
+\header{Education}
+	\hspace{-10pt}\schoolentry{M.S., Computer Engineering}{3.86}{Portland State University, Portland Oregon}{2011-2013}
+  \vspace{3pt}
+
+	\schoolentry{Post-Bac, Electrical/Computer Engineering}{3.88}{Portland State University, Portland Oregon}{2010-2012}
+	\vspace{3pt}
+
+	\schoolentry{B.A., Environmental Studies}{3.80}{University of Oregon, Eugene Oregon}{2005-2009}	
+
+% Work History
+\header{Work History}
+	\hspace{-10pt}
+	\textbf{Intel Corporation} Hillsboro, Oregon\\
+	\emph{Data Center Group Intern -- 2011-2013}
+	\begin{tight}
+		\item RTL Development of an FPGA-based DDR3 Memory Error Injector (MEI) interposer. 
+		\item Python utility development for automating testing of server platform error injection and verification using MEI.
+		\item Optimization of FPGA RTL designs to improve timing and enhance features as per customer needs.
+		\item Testing of runtime memory error injection and detection on Intel server platforms.
+	\end{tight} 
+
+	\textbf{Portland State University} Portland, Oregon\\
+	\emph{IEEE Tutor (Computer Engineering) -- 2011-2013}		
+	\begin{tight}
+		\item Programming/Algorithms (Verilog, C, C++ Python)
+		\item Digital Circuits (Logic Circuits, Boolean Algebra, Programmable Logic Devices, Simulation)
+		\item Digital Systems (Synchronous Design, Timing Analysis, State Machines, FPGA Synthesis, Microprocessors)
+	\end{tight}
+
+	\textbf{Free Geek} Portland, Oregon\\
+	\emph{Platform Deployment Tech (Volunteer) -- 2013-Current} 
+	\begin{tight}
+		\item Computer disassembly/assembly
+		\item Peripherals test and debug
+		\item OS/Software installation
+	\end{tight}
+
+% Awards, etc	
+\header{Honors \& Awards}
+	\vspace{-15pt}
+	\begin{itemize}
+		\item \NameUrlTextBlock{Intel Professional Recognition}{http://db.tt/0nqPo3Yf} 	\vspace{-16pt}
+		\begin{itemize}
+			\item Awarded for "excellent creative and technical abilities", after identifying, debugging and repairing a critical functionality in key product in 2013.
+		\end{itemize} \vspace{-6pt}
+
+		\item \NameUrlTextBlock{Ford Family Foundation Scholarships \emph{(Undergraduate and Graduate)}}{http://www.tfff.org/} \vspace{-16pt}
+		\begin{itemize}
+		\item One of fewer than 100 Scholars inducted into the prestigious Ford Family Foundation Undergraduate Scholarship program in 2005. \vspace{-3pt} 
+		\item Awarded second, additional Graduate Scholarship following academic successes at University of Oregon and Portland State University. \vspace{-3pt}
+		\end{itemize}
+		\item \NameUrlTextBlock{Etta Kappa Nu (HKN)}{http://web.cecs.pdx.edu/~eta/} \vspace{-16pt}
+		\begin{itemize}
+			\item IEEE Honors Society. Limited to top 25\% of Department. \vspace{-3pt}
+		\end{itemize}
+
+		\item \NameUrlTextBlock{Golden Key International Honour Society}{https://www.goldenkey.org/}\vspace{-16pt}
+		\begin{itemize}
+			\item Member since 2008\vspace{-3pt}
+		\end{itemize}
+
+	\end{itemize}
+
+% references
+\header{References}
+	\emph{Available upon request.}
+
+% PAGE BREAK
+\newpage
+\fancyhf{}
+
+% Projects	
 \header{Academic Projects}
 	\vspace{-15pt}
 	
 	\begin{itemize}
 		\item \NameUrlTextBlock
-		{FPGA-Based Color-Tracking Robot (Verilog, PicoBlaze)}{http://tinyurl.com/color-fpga-bot}
-		{I worked with a partner to design and built an autonomous color-seeking robot for the final project in an SoC with FPGAs course.  The robot was controlled with a combination of custom Verilog code and a Picoblaze soft-core microcontroller instantiated inside the FPGA on a Spartan-6E development board.  This robot used a CMUCam4 camera for vision and several proximity sensors for environmental awareness.  It could be trained to any color, which it would then seek out and follow. 
-In a classwide competition, this design was awarded 1$^{st}$ place for best term project by the instructors.}
+		{FPGA-Based Color-Tracking Robot (Verilog, PicoBlaze)}{http://tinyurl.com/color-fpga-bot}\vspace{-16pt}
+		\begin{itemize}
+			\item 1$^{st}$ place in class competition for best term project (SoC design with FPGAs), awarded by course professors. \vspace{-3pt}
+			\item Designed and built autonomous color-seeking robot controlled by SoC in FPGA.  \vspace{-3pt}
+			\item Controlled via custom Verilog code and Picoblaze soft processor in FPGA of Spartan-6E development board
+			\vspace{-3pt} 
+			\item Computer vision via CMUCam4 camera and environmental awareness via proximity/light sensors.\vspace{-3pt}   		
+			\end{itemize}
  
 		\item \NameUrlTextBlock
-		{Branch Predictor/BTB simulation (C)}	{https://github.com/rattboi/flanders_ece486}
-		{I worked with a partner to develop a branch predictor and branch target buffer simulation as a final project in a Computer Architecture course.   Our algorithm was tested against numerous traces from an unknown processor and placed in the top 3 best performing solutions in the class.}
+		{Branch Predictor/BTB simulation (C)}	{https://github.com/rattboi/flanders_ece486}\vspace{-16pt}
+		\begin{itemize}
+			\item Accuracy of solution ranked within top 3 best designs in Computer Architecture course when tested against traces taken from unknown processor.\vspace{-3pt} 
+			\item Development of branch predictor/branch target buffer simulation in C.\vspace{-3pt} 
+			\item Design of N-way associative cache, Return Address Stack, and Fully-Associative cache simulation blocks in C++			
+		\end{itemize}
 		
 		\item \NameUrlTextBlock
-		{Microprocessor Cache Simulation (Verilog)}{https://github.com/ekrause/0xBEEFA55}
-		{I developed a split-level L1 cache simulator with a small team for the final project of a Microprocessor Design course. It read in a text file of sample trace data, and displayed cache hit/miss statistics at completion of the trace.  We were later contacted by the professor and our source code was incorporated into the course material.}
+		{Microprocessor Cache Simulation (Verilog)}{https://github.com/ekrause/0xBEEFA55}\vspace{-16pt}
+		\begin{itemize}
+			\item Source code from this project has been incorporated into Microprocessor Design course materials by professor\vspace{-3pt} 
+			\item Designed and coded split-level L1 data/instruction cache simulation in Verilog\vspace{-3pt}
+			\item Project read in trace data from text file, performed cache simulation, and displayed hit/miss statistics.		\vspace{-3pt}
+		\end{itemize}
+		
 	\end{itemize}
 	\vspace{-4pt}
 
-% Awards, etc	
-% TODO: reorder: award, scholorship, then volunteer, then honors societies
-% TODO: make award sound awesomer
-\header{Honors, Awards, and Volunteering}
-	\vspace{-15pt}
-	\begin{itemize}
-		
-		\item \NameUrlTextBlock{Etta Kappa Nu (HKN)}{http://web.cecs.pdx.edu/~eta/}
-		{IEEE Honors Society. Limited to top 25\% of Department.}
-
-		\item \NameUrlTextBlock{Golden Key International Honour Society}{https://www.goldenkey.org/}
-		{Member since 2008.}
-		\item \NameUrlTextBlock{Ford Family Foundation Scholarships: Undergraduate/Graduate}{http://www.tfff.org/}
-		{I was one of fewer than 100 Scholars in Oregon to be inducted into the prestigious Ford Family Foundation program in 2005.  In 2012, I was awarded the Ford Family Foundation Graduate scholarship, following my academic success at University of Oregon (B.A.) and my Portland State University (Post-Bac).} 
-		
-		\item \NameUrlTextBlock{Intel Internal Recognition}{http://db.tt/0nqPo3Yf}
-		{During my first engineering internship, I was recognized for my "excellent creative and technical abilities", after identifying, debugging and repairing a critical functionality in our key product in 2013.}
-	\end{itemize}
-
-\newpage % manual break for predicable formatting
-
-\fancyhf{} % clear the header/footer of this new page
-
-% continued Awards section
-\header{Honors, Awards, and Volunteering (Continued)}
-	\vspace{-15pt}
-	\begin{itemize}
-	
-		\item \NameUrlTextBlock{IEEE ECE Tutor}{http://www.pdx.edu/ece/tutoring-resources}
-		{I am an IEEE Tutor for lower-level ECE courses, specializing in digital logic, programming, and digital design.}
-
-		\item \NameUrlTextBlock{FreeGeek Volunteer}{http://www.freegeek.org/}
-		{I am a regular volunteer at FreeGeek, a Portland nonprofit dedicated to the mission of recycling technology and providing affordable access to computers.}
-
-	\end{itemize}
-	\vspace*{-2pt}
-
-% Work History
-\header{Work History} % TODO: more past tense, less present tense
-	\hspace{-10pt}
-	\textbf{Intel Corporation}\\2011-2013: \textit{Technology Solutions Enabling Intern}
-	\begin{tight}
-			\item Testing/Verification/Development of FPGA-based Memory Error Injector (MEI)
-		\item Design and development of many CLI utilities for testing, automation, and customer use.
-		\item Development of new features in RTL.  % TODO: elaborate on WHAT was developed
-		\item Optimization of existing design and synthesis of new modules
-		\item Design of testbenches for verification of features implemented in future revisions
-	\end{tight} 
-
-	\textbf{Umpqua Bank}\\2010-2011: \textit{Financial Services Representative}
-	\begin{tight}
-		\item Business development, community presentations.
-		\item Loan applications, sales, and financial transactions.
-	\end{tight}
-
-	\textbf{Oregon Community Credit Union}\\ 2009-2010: \textit{Sales Associate}
-	\begin{tight}
-		\item Loan applications, audits (security, policy, cash verification), and financial transactions.
-	\end{tight}
-
-\header{References}
-
-\vspace*{-9pt}
-\begin{tabular}{llrr}
-	\textbf{Isaac Itotia} & Technology Solutions Enabling (Intel) & \url{isaac.itotia@intel.com} & (651) 278-5309 \\
-	\textbf{Mark Faust} & Professor (Portland State University) & \url{faustm@pdx.edu} & (503) 725-5412\\
-	\textbf{Roy Kravitz} & Professor/Director (Portland State University) & \url{roy.kravitz@ece.pdx.edu} & (503) 913-1678\\ 
-\end{tabular}
 \end{document}
