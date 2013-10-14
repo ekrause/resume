@@ -1,4 +1,3 @@
-\usepackage{fullpage} % makes margins reasonable
 \usepackage[colorlinks=true,urlcolor=black,linkcolor=black]{hyperref} % allows hyperlinks
 
 \usepackage{fancyhdr} % used primarily for custom first page footer
@@ -19,7 +18,7 @@
 {
 	\begin{list}
 		{$\bullet$}{\topsep 0pt \itemsep -2pt}}
-		{\vspace*{4pt}
+		{\vspace*{0pt}
 	\end{list}
 }
 
@@ -36,14 +35,14 @@
 {
 	\vspace*{6pt}{\hspace*{-15pt}\vspace*{6pt} 
 	\textsc{\large #1}} \vspace*{-6pt} 
-	\lineunder \vspace{0pt}
+	\lineunder \vspace{-12pt}
 }
 
 % simple command to ensure all school entries are formatted identically.
 \newcommand{\schoolentry}[4]
 {
 	\noindent\textbf{#1 \hfill GPA: #2/4.00}\\
-	\emph{#3 \hfill #4}
+	\emph{#3 \hfill #4}\vspace{3pt}
 }
 
 % creates a generic block consisting of 2 lines: 
@@ -57,3 +56,8 @@
 \pagestyle{fancy}
 \setlength{\parindent}{0cm}
 %\raggedright
+
+\newcommand{\expheader}[4] 
+{
+	\vspace{-4pt}\hspace{-10pt}\textbf{#1} -- #2 -- \emph{#3 \hfill #4}\\\vspace{-20pt}
+}
