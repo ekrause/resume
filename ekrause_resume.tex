@@ -1,6 +1,6 @@
 \documentclass{article}
 \usepackage{resume}
-\usepackage[top=.9in, bottom=.9in, left=1in, right=.85in]{geometry}
+\usepackage[top=1in, bottom=.9in, left=.92in, right=.83in]{geometry}
 \usepackage{setspace}
 \setstretch{0.98}
 
@@ -25,7 +25,7 @@
 
 	\hspace{-4pt}\schoolentry{M.S., Computer Engineering}{3.86}{Portland State University, Portland Oregon -- Expected Graduation: 12/2013}{2011-Current}
 
-	\schoolentry{Post-Bac, Electrical/Computer Engineering}{3.88}{Portland State University, Portland Oregon}{2010-2012}
+	\schoolentry{Post-Bac Studies, Electrical/Computer Engineering}{3.88}{Portland State University, Portland Oregon}{2010-2012}
 
 	\schoolentry{B.A., Environmental Studies}{3.80}{University of Oregon, Eugene Oregon}{2005-2009}	
 	
@@ -35,7 +35,7 @@
 
 % Relavant Coursework 
 \header{Relevant Coursework}
-	\begin{table}[h!]
+	\begin{table}[h!]\centering
 	\small\vspace{-8pt}
 	\begin{tabular}{lll}
 	$\bullet$ Microprocessor Design & $\bullet$ Superscalar Processor System Architecture & $\bullet$ Parallel Computing Architecture\\
@@ -60,11 +60,22 @@
 % Work History
 \header{Experience}\vspace{3pt}
 
+\expheader{Data Center Group Intern}{Intel Corporation}{Hillsboro, Oregon}{3/2011 - 9/2013}
+
+	\begin{itemize}\setlength{\itemsep}{-4pt}
+		\item Wrote RTL and testbenches for an FPGA-based DDR3 Memory Error Injector (MEI) interposer.
+		\item Developed automated testing CLI utilities in Python to simplify testing MEI on Intel server platforms.
+		\item Optimized existing FPGA RTL designs to improve timing and enhance features per customer needs.
+		\item Tested memory error injection functionality of MEI and memory error detection on Intel server platforms.
+		\item Received professional award for identifying, debugging and repairing a bug affecting a critical function of a key product in 2013.
+
+	\end{itemize} 
+
 \expheader{IEEE Computer Engineering Tutor}{Portland State University}{Portland, Oregon}{9/2012 - Current}
 
 	\begin{itemize}\setlength{\itemsep}{-4pt}
-		\item Instructed students on a variety Computer Engineering topics, including programming and digital design.
-		\item Adapted teaching strategies the unique background and abilities level of each student.
+		\item Instructed students on a variety of Computer Engineering topics, including programming and digital design.
+		\item Adapted teaching strategies to the unique background and abilities level of each student.
 	\end{itemize}
 
 \expheader{Platform Deployment Tech Volunteer}{Free Geek}{Portland, Oregon}{9/2013 - Current}
@@ -72,32 +83,21 @@
 	\begin{itemize} \setlength{\itemsep}{-4pt}
 		\item Assembled and repaired desktops, workstations, and servers.
 		\item Tested and debugged hardware peripherals for reuse or recycling.		
-		\item Administrated installation of Linux OS and other software.
+		\item Installed Linux OS and other software.
 	\end{itemize}
-
-\expheader{Data Center Group Intern}{Intel Corporation}{Hillsboro, Oregon}{3/2011 - 9/2013}
-
-	\begin{itemize}\setlength{\itemsep}{-4pt}
-		\item Wrote RTL and testbenches for an FPGA-based DDR3 Memory Error Injector (MEI) interposer.
-		\item Developed automated testing CLI utilities in Python to simplify testing of MEI on Intel server platforms.
-		\item Optimized existing FPGA RTL designs to improve timing and enhance features as per customer needs.
-		\item Tested memory error injection functionality of MEI and memory error detection on Intel server platforms.
-		\item Received professional award for identifying, debugging and repairing a critical functionality in a key product.
-
-	\end{itemize} 
 	
-\expheader{Microarchitecture Researcher}{Portland State University}{Portland, Oregon}{3/2013}
+\expheader{Microprocessor Design Term Project}{Portland State University}{Portland, Oregon}{3/2013}
 	
 		\begin{itemize} \setlength{\itemsep}{-4pt}
 			\item Implemented simulation of branch predictor, branch target buffer as a term project for Comp. Architecture.
-			\item Designed N-way associative cache, Return Address Stack, and Fully-Associative cache structures in C++	.
+			\item Designed N-way associative cache, return address stack, and fully-associative cache structures in C++	.
 			\item Evaluated performance of many design iterations using instruction traces from an unknown processor.
 		\end{itemize}	
 	
-\expheader{Embedded Systems Engineer}{Portland State University}{Portland, Oregon}{12/2012}
+\expheader{Embedded Systems with FPGAs Term Project}{Portland State University}{Portland, Oregon}{12/2012}
 	
 	\begin{itemize}\setlength{\itemsep}{-4pt}
-		\item Designed, assembled, and programmed an autonomous, color-seeking robot controlled by an FPGA SoC.  
+		\item Designed, assembled, and programmed an autonomous, color-seeking robot controlled by an FPGA-based SoC.  
 		\item Implemented computer vision, environmental awareness, and behavioral control using Verilog and ASM.
 	\end{itemize}
 
@@ -112,11 +112,11 @@
 		\item Planed and organized events to promote HKN at Portland State University.
 	\end{itemize}	\vspace{-2pt}
 
-\expheader{Scholarship Recipient}{Ford Family Foundation}{Academic Scholarship}{8/2005 and 8/2012}
+\expheader{Scholarship Recipient}{Ford Family Foundation}{Academic Scholarship}{}
 
 	\begin{itemize} \setlength{\itemsep}{-4pt}
-		\item Inducted into Ford Family Foundation Scholarship program in 2005 for leadership and academic excellence.
-		\item Awarded additional Graduate Scholarship in 2012 following academic success of undergraduate work.
+		\item Awarded Ford Family Foundation Scholarship for leadership and academic excellence.\hfill\emph{8/2005}
+		\item Awarded Graduate Scholarship for academic excellence.\hfill\emph{8/2012}
 	\end{itemize}
 
 	
